@@ -497,6 +497,7 @@ img {
 
 /*------------------ section footer -------------------*/
 .footer-wrap {
+ 
   display: flex;
   align-items: baseline;
 }
@@ -551,9 +552,6 @@ img {
 }
 
 .footer-soc {
-  width: 206px;
-  height: 80px;
-  margin-left: 70px;
   justify-content: center;
 }
 .footer-soc-list {
@@ -610,8 +608,7 @@ img {
   color: #ffffff;
 }
 .footer-form-btn {
-  width: 200px;
-  height: 50px;
+  padding: 10px 30px 10px 29px;
   background: #2196f3;
   border-radius: 4px;
   font-family: inherit;
@@ -835,7 +832,7 @@ img {
 }
 
 .modal-icon-close {
-  fill: currentColor;
+ fill: currentColor;
 }
 
 .modal-button {
@@ -855,15 +852,20 @@ img {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-.modal-button:hover {
+.modal-button:hover,
+.modal-button:focus{
   color: var(--main-second-color);
 }
 
 .modal-title {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 15px;
+  font-family:inherit;
+font-weight: 700;
+font-size: 20px;
+line-height: calc(23/20);
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--main-color);
+
 }
 .modal-input {
   width: 100%;
@@ -877,7 +879,7 @@ img {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-.modal-input:focus {
+.modal-input:focus{
   border: 1px solid var(--main-second-color);
 }
 /*.modal-input:not(:placeholder-shown){
@@ -914,7 +916,7 @@ img {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: #757575;
-  margin-bottom: 10px;
+margin-top: 20px;
 }
 .modal-text {
   padding: 12px 16px;
@@ -1006,4 +1008,9 @@ img {
   color: var(--mail-color);
   display: flex;
   align-items: center;
+}
+
+
+.footer-div-address{
+  margin-right: 50px;
 }
